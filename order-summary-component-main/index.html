@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;1,900&display=swap');
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        body {
+            font-family: 'Red Hat Display', sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 16px;
+            background-color: #4158D0;
+            background-color: #8EC5FC;
+            background-color: #0093E9;
+            background-image: linear-gradient(0deg, #0093E9 0%, #80D0C7 100%);
+        }
+        
+        .main-container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .main-container section {
+            height: 100%;
+            width: 100%;
+            background-color: hsl(225, 100%, 98%);
+        }
+        
+        .imagen-container img {
+            width: 100%;
+        }
+        
+        .text-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            text-align: center;
+        }
+        
+        .text {
+            width: 300px;
+        }
+        
+        .text h1 {
+            color: hsl(223, 47%, 23%);
+        }
+        
+        .text p {
+            font-size: 16px;
+            color: hsl(224, 23%, 55%);
+        }
+        
+        .plan {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            align-items: center;
+        }
+        
+        .plan-container {
+            position: relative;
+            width: 80%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: hsl(225, 100%, 94%);
+            border-radius: 20px;
+        }
+        
+        .plan-box {
+            margin-right: 120px;
+        }
+        
+        .plan-box p {
+            color: hsl(223, 47%, 23%);
+            margin: 32px 0 0 0;
+        }
+        
+        .plan-box small {
+            color: hsl(224, 23%, 55%);
+        }
+        
+        .plan-container a {
+            align-self: center;
+            position: absolute;
+            right: 20px;
+            font-size: 16px;
+            color: hsl(228, 45%, 44%);
+        }
+        
+        .plan-container img {
+            height: 50px;
+            align-self: center;
+        }
+        
+        .button {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .button button {
+            width: 80%;
+            height: 45px;
+            border: none;
+            border-radius: 10px;
+            background-color: hsl(245, 75%, 52%);
+            font-size: 16px;
+            color: hsl(225, 100%, 94%);
+            font-weight: 700;
+            box-shadow: 0px 25px 17px -1px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cancel-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 16px;
+        }
+        
+        .cancel-button a {
+            color: hsl(224, 23%, 55%);
+            text-decoration: none;
+        }
+        
+        @media(min-width:480px) {
+            .main-container {
+                height: 100vh;
+            }
+            .main-container section {
+                height: 650px;
+                width: 500px;
+                border-radius: 20px;
+            }
+            .imagen-container img {
+                border-radius: 20px 20px 0 0;
+            }
+            .plan-container a:hover {
+                text-decoration: none;
+                color: hsl(224, 23%, 55%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main-container">
+        <section>
+            <div class="imagen-container">
+                <img src="./images/illustration-hero.svg" alt="">
+            </div>
+            <div class="text-container">
+                <div class="text">
+                    <h1>
+                        Order Summary
+                    </h1>
+                    <p> You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+                    </p>
+                </div>
+
+            </div>
+            <div class="plan">
+                <div class="plan-container">
+                    <img src="./images/icon-music.svg" alt="icono de musica">
+
+                    <div class="plan-box">
+                        <p><strong>Annual Plan</strong></p>
+                        <small>$59.99/year</small>
+                    </div>
+
+                    <a href="/">Change</a>
+                </div>
+            </div>
+
+
+            <div class="button">
+                <button>Proceed to Payment</button>
+            </div>
+            <div class="cancel-button">
+                <a href="/">Cancel Order</a>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+</body>
+
+</html>
